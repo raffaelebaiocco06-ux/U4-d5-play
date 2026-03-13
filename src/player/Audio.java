@@ -23,6 +23,16 @@ public class Audio extends Elemento implements Riproducibile {
     //play
 @Override
     public void play(){
-        System.out.println(" Audio partito ");
+        String app="";
+        char el='!';
+        for(int q=1;q<=volume;q++){
+            app=app+el;
+        }
+
+// la stampa
+        for(int i=1;i<=durata;i++){
+            System.out.println("Audio "+ getTitolo() + app);
+        }
+
 }
 }

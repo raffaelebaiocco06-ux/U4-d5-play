@@ -33,7 +33,20 @@ public class Video extends Elemento implements Riproducibile  {
     //play
     @Override
     public void play(){
-        System.out.println(" Video partito ");
+        String app="";
+        char el='!';
+        for(int q=1;q<=volume;q++){
+            app=app+el;
+        }
+        char ast='*';
+        for(int i=1;i<=luminosita;i++){
+            app=app+ast;
+        }
+
+//la stampa
+        for(int i=1;i<=durata;i++){
+            System.out.println("Video "+ getTitolo() + app );
+        }
     }
 }
 

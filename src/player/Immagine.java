@@ -15,4 +15,18 @@ public class Immagine extends Elemento{
     public int alzaLuminosita(){
         return luminosita++;
     }
+    //metodo show
+    public void show(){
+        String app="";
+        char ast='*';
+        for(int i=1;i<=luminosita;i++){
+            app=app+ast;
+        }
+        // la stampa
+        for(int i=1;i<=luminosita;i++){
+            System.out.println("Immagine "+ getTitolo() + app);
+        }
+
+
+    }
 }
