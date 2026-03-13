@@ -16,6 +16,7 @@ public class Immagine extends Elemento{
         return luminosita++;
     }
     //metodo show
+
     public void show(){
         String app="";
         char ast='*';
