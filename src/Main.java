@@ -71,7 +71,7 @@ int luminosita;
         int chiedo;
 
         do {
-            System.out.println("Scegli elemento da eseguire (1-5) oppure 0 per uscire");
+            System.out.println("Scegli numero da eseguire (1-5) oppure 0 per uscire");
             chiedo = Integer.parseInt(scanner.nextLine());
 
             if (chiedo>= 1 && chiedo <= 5) {
@@ -85,6 +85,7 @@ int luminosita;
             }
 
         } while (chiedo != 0);
+        System.out.println("Programma terminato.");
 
 
 
